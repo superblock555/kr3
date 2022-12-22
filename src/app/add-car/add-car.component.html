@@ -1,0 +1,21 @@
+<h2>Add Car</h2>
+
+<form (ngSubmit)="addCar()">
+  <div>
+    <label>ID:</label>
+    <input [(ngModel)]="car.id" name="id" required>
+  </div>
+  <div>
+    <label>Brand Name:</label>
+    <input [(ngModel)]="car.brandName" name="brandName" required>
+  </div>
+  <div>
+    <label>Model Name:</label>
+    <input [(ngModel)]="car.modelName" name="modelName" required>
+  </div>
+  <div>
+    <label>Price In Rub:</label>
+    <input [(ngModel)]="car.priceInRub" name="priceInRub" required>
+  </div>
+  <button type="submit">Add</button>
+</form>

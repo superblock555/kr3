@@ -1,0 +1,7 @@
+<h2>Список автомобилей</h2>
+
+<ul>
+  <li *ngFor="let car of cars">
+    <a routerLink="/car/{{car.id}}">{{car.brandName}} {{car.modelName}}</a>
+  </li>
+</ul>
